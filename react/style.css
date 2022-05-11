@@ -1,0 +1,319 @@
+/* body{
+  margin: 0;
+  padding: 0;
+}
+.filter{
+  padding-bottom: 10px;
+}
+.adressInput{
+  padding-bottom: 10px;
+  display: flex !important
+}
+
+.bottonSeeAll{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 4px 22px;
+  border: 1px solid #efb3cb;
+  background-color: #efb3cb;
+  transition: 0.3s ease all;
+  margin-bottom: auto;
+}
+
+@media(min-width:1024px){
+  .bottonSeeAll{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 4px 22px;
+    border: 1px solid #efb3cb;
+    background-color: #efb3cb;
+    transition: 0.3s ease all;
+    margin-bottom: auto;
+  }
+
+  .filterContainerMain{
+    flex-direction: row;
+    justify-content: center !important;
+  }
+  .filter{
+    padding: 0 55px 10px 55px;
+  }
+  .adressInput{
+    padding: 0 20px 10px 20px;
+    display: flex !important;
+  }
+  .buttonSeeAll{
+    padding: 0 20px 10px 20px;
+  }
+  .listingStores{
+    width: 24%;
+  }
+  .map{
+    width: 75%;
+  }
+  .contMap{
+    display: flex;
+  }
+}
+.filterSelect{
+  text-align: center;
+}
+
+.clearButton {
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #efb3cb;
+  padding: 4.5px;
+  background-color: #efb3cb;
+  transition: 0.3s ease all;
+  margin-bottom: auto;
+  border-radius: 0px 5px 5px 0px;
+}
+ */
+
+
+.title{
+  color: #292929 !important;
+  font-family: "Montserrat";
+  font-weight: 900 !important;
+}
+
+.description{
+  color: #292929 !important;
+  font-family: "Montserrat" !important;
+  font-weight: 100 !important;
+}
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.filterContainerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filter {
+  padding-bottom: 10px;
+}
+.adressInput {
+  padding-bottom: 10px;
+  display: flex !important;
+}
+
+/* .bottonSeeAll {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 4px 22px;
+  border: 1px solid #efb3cb;
+  background-color: #efb3cb;
+  transition: 0.3s ease all;
+  margin-bottom: auto;
+} */
+
+.filterSelect {
+  text-align: center;
+  border-radius: 5px;
+     border: 1px solid #f6f6f4;
+     background-color: #f6f6f4;
+     height: 35px;
+     width: 250px;
+     font-family: "Montserrat";
+     font-size: .75rem;
+     line-height: 14px;
+}
+
+.clearButton {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 1px solid #f6f6f4;
+  border-top: 1px solid #f6f6f4;
+  border-right: 1px solid #f6f6f4;
+  border-left: 1px solid transparent;
+  background-color: #f6f6f4;
+  padding: 4.5px;
+  margin-left: -2px;
+  transition: 0.3s ease all;
+  border-radius: 0px 5px 5px 0px;
+  font-family: "Montserrat";
+  color: #000;
+  font-size: 16px;
+}
+
+.adressAutocomplete {
+  text-align: center;
+  border-radius: 5px 0px 0px 5px;
+  border-bottom: 1px solid #f6f6f4;
+  border-top: 1px solid #f6f6f4;
+  border-right: 1px solid #f6f6f4;
+  border-left: 1px solid #f6f6f4;
+  background-color: #f6f6f4;
+  box-sizing: border-box;
+  height: 35px;
+  font-family: "Montserrat";
+  font-size: .75rem;
+  line-height: 14px;
+}
+
+.adressAutocomplete:active {
+  border-bottom: 1px solid #f6f6f4;
+  border-top: 1px solid #f6f6f4;
+  border-right: 1px solid #f6f6f4;
+  border-left: 1px solid #f6f6f4;
+}
+
+
+.moreDetails {
+  font-family: "Montserrat";
+  font-size: .75rem;
+  text-transform: uppercase;
+  line-height: 14px;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.moreDetails:hover {
+  text-decoration: underline;
+  color: #56C271;
+  font-weight: 600;
+}
+
+.title {
+  font-family: "MontserratSemiBold";
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.focusModal {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  color: #56C271;
+}
+
+.businessHours {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.listHours {
+  list-style-type: none;
+}
+
+.allListHours {
+  padding-left: 0;
+}
+
+.listContainer {
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.list {
+  margin-bottom: 10px;
+  overflow-y: scroll;
+  /* WebkitOverflowScrolling: 'touch'; */
+  list-style-type: none;
+  padding-left: 0px;
+  scrollbar-width: thin;
+  scrollbar-color: #D3F4D0;
+}
+
+.list::-webkit-scrollbar-track {
+  background-color: #56C271;
+}
+
+.listItem:hover {
+  cursor: pointer;
+}
+
+.listItem:hover .listItemName{
+  color: #56C271;
+}
+
+.listItem {
+  background-color: rgb(248, 248, 248);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  border: 1px solid #e3e4e6;
+}
+
+.listItemName {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.listItemAddress {
+  font-family: "Montserrat";
+  font-size: .75rem;
+  text-transform: uppercase;
+  line-height: 14px;
+}
+
+.contMap{
+  margin-bottom: 118px;
+}
+
+
+@media (min-width: 641px) {
+
+  .listContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+    .businessHours{
+      max-width: 40%;
+    }
+
+    .filterContainerMain {
+      flex-direction: row;
+      justify-content: center !important;
+    }
+    .filter {
+      padding: 0 55px 10px 55px;
+    }
+    .adressInput {
+      padding: 0 20px 10px 20px;
+      display: flex !important;
+    }
+    .buttonSeeAll {
+      padding: 0 20px 10px 20px;
+    }
+    .listingStores {
+      width: 24%;
+    }
+    .map {
+      width: 100%;
+    }
+    .contMap {
+      display: flex !important;
+    }
+  }
+
+
+  /* Natural Scents estilos */
+

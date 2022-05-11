@@ -1,0 +1,141 @@
+<script src="/arquivos/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  (function() {
+    var appId = "{{settings.gtmId}}";
+    if (!appId) {
+      console.error('Warning: No APP NAME ID is defined. Please configure it in the apps admin.');
+      return
+    }
+
+    // Add script here
+  })()
+  
+</script>
+
+<!-- Messenger Plugin de chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your Plugin de chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "111226288909041");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v13.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<style>
+
+#total-price .vtex-checkout-summary-0-x-price{
+  font-family: "MontserratSemiBold";
+  font-size: 16px;
+}
+
+#total{
+  font-family: "MontserratSemiBold" !important;
+  font-size: 16px;
+}
+
+.vtex-login-2-x-googleOptionBtn svg, .vtex-login-2-x-facebookOptionBtn svg{
+  display: none;
+}
+
+.vtex-input-prefix__group
+  .b--light-gray{
+    border: 1px solid #000000;
+}
+
+.t-heading-4{
+  font-family: "Montserrat";
+}
+
+.vtex-account__create-card
+  .vtex-button{
+  background-color: #56C271;
+}
+
+.vtex-disclosure-layout-1-x-trigger--question:focus{
+  color: #000000;
+}
+
+.vtex-disclosure-layout-1-x-trigger--question:focus .vtex-rich-text-0-x-paragraph{
+  color: #000000 !important;
+}
+
+.vtex-login-2-x-inputContainerPassword .t-small{
+  color: #ffffff !important;
+}
+
+.vtex-modal__confirmation .vtex-button{
+    background-color: #56C271 !important;
+    border: none;
+    color: #ffffff;
+}
+
+.vtex-pageHeader__container .vtex-button .t-action--small{
+  font-family: "Montserrat";
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.styles_modal__gNwvD
+ .t-heading-5{
+  font-family: "Montserrat";
+}
+
+.vtex-my-account-1-x-profile
+  .w-60-ns{
+  width: 100%;
+}
+
+.vtex-my-account-1-x-profile
+  .w-40-ns{
+  width: 0;
+}
+
+.vtex-my-account-1-x-profileBoxContainer{
+  width: 100%;
+}
+
+.naturalscents-naturalscents-app-0-x-filterContainerMain{
+  margin-top: 50px;
+}
+
+.newAddressButton{
+  text-decoration: none;
+}
+
+.newAddressButton
+.vtex-button::before{
+  display: none;
+}
+
+</style>
+
+<body>
+  <!-- Messenger Plugin de chat Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Plugin de chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+</body>
