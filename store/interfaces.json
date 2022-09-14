@@ -4,5 +4,8 @@
   },
   "storeMap": {
     "component": "StoreMap"
+  },
+  "removeCards": {
+    "component": "RemoveCards"
   }
 }
