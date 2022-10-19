@@ -1,7 +1,7 @@
 {
   "name": "naturalscents-app",
   "vendor": "naturalscents",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "title": "naturalscents-app",
   "description": "Custom store map para onenamx",
   "builders": {
@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "vtex.pixel-interfaces": "1.x",
-    "vtex.styleguide": "9.x"
+    "vtex.styleguide": "9.x",
+    "vtex.product-context": "0.x"
   },
   "settingsSchema": {
     "title": "YOUR APP NAME",
