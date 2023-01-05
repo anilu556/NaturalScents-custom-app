@@ -13,5 +13,8 @@
   },
   "ingredientesSpecification": {
     "component": "IngredientesSpecification"
+  },
+  "textSearch": {
+    "component": "TextSearch"
   }
 }
